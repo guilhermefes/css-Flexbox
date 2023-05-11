@@ -1,0 +1,12 @@
+.child-box {
+   border: rgb(68, 56, 5) solid 1px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.parent-box {
+    display: flex;
+    background-color: azure;
+    padding: 100px;
+}
