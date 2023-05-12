@@ -1,18 +1,158 @@
-.child-box {
-   border: rgb(63, 37, 3) solid 1px;
+ @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+ body {
+    font-family: 'Goudy Bookletter 1911', Arial, Helvetica, sans-serif;
+ }
+.parentBox {
+    display: flex;
+    background-color: rgb(190, 192, 164);
+    padding: 40px 20px 20px 20px;
+}
+
+.parentBox > p {
+    position: absolute;
+    margin-top: -30px;
+}
+
+.parentBox > .childBox {
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: var(--colorBorder); */
+    border: rgb(248, 245, 245) solid 1px;
+    border-radius: 2px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.parentBox > .childBox:nth-child(2) /*o nth mexe com todos os filhos, então a p é o 1° filho*/ {
+    background-color: rgb(182, 165, 88);
+}
+
+.parentBox > .childBox:nth-child(3){
+    background-color: rgb(89, 117, 115);
+}
+
+.parentBox > .childBox:nth-child(4){
+    background-color: rgb(150, 151, 101);
+}
+
+#jc-center > .parentBox {
+    justify-content: center;
+}
+
+#jc-flexStart > .parentBox {
+    justify-content: flex-start;
+}
+
+#jc-flexEnd > .parentBox {
+    justify-content:flex-end;
+}
+
+#jc-spaceBetween > .parentBox {
+    justify-content: space-between;
+}
+
+#jc-spaceAround > .parentBox {
+    justify-content: space-around;
+}
+
+#jc-spaceEvenly > .parentBox {
+    justify-content: space-evenly;
+}
+/* .child-box {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border: black solid 1px;
+    border-radius: 10px;
+   /* shorthand 
     width: 100px;
     height: 100px;
     text-align: center;
 }
 
+
+
+.parent-box div:nth-child(2) {
+    background-color: rgb(187, 255, 0);
+
+}
+
+.parent-box div:nth-child(3) {
+    background-color: rgb(0, 255, 21);
+
+
+
+}
+
+.parent-box div:nth-child(4) {
+    background-color: rgb(251, 255, 0);
+
+}
+
 .parent-box {
     display: flex;
-    background-color: rgb(179, 168, 107);
+    background-color: darkkhaki;
+    padding: 40px 20px 20px 20px;
+
+    /*shorthand para: padding-top, padding-right, padding-bottom, padding-left
+
+}
+
+.parent-box>p {
+    position: absolute;
+    margin-top: -30px;
+}
+#jc-center .parent-box {
+    justify-content: center;
+}
+
+#jc-space-around .parent-box{
+    justify-content: space-around;
+}
+
+
+.child-box {
+   border: rgb(63, 37, 3) solid 1px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.parent-box div .child-box:nth-of-type(1) {
+    background-color: rgb(69, 102, 54);
+}
+
+.parent-box div .child-box:nth-of-type(2) {
+    background-color: burlywood;
+}
+
+.parent-box div .child-box:nth-of-type(3) {
+    background-color: rgb(5, 70, 82);
+}
+
+
+.parent-box > p {
+    display: flex;
+    background-color: rgb(240, 227, 158);
     padding: 40px 20px 20px 20px;
 }
+
 
 .parent-box > p {
     position: absolute;
     margin-top: 30px;
+
 }
 
+
+#jc-center .parent-box {
+    justify-content: center;
+}
+
+#jc-space-around .parent-box{
+    justify-content: space-around;
+}
